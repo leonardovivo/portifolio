@@ -38,8 +38,31 @@ class SectionIntro extends StatelessWidget {
                         ),
                       )
                           .animate()
-                          .fadeIn(duration: 1.seconds)
-                          .slide(begin: const Offset(0, 1)),
+                          .fadeIn(duration: 1500.ms, curve: Curves.easeOutQuart)
+                          .scale(
+                            begin: const Offset(0.3, 0.3),
+                            end: const Offset(1.0, 1.0),
+                            duration: 1800.ms,
+                            curve: Curves.elasticOut,
+                          )
+                          .rotate(
+                            begin: -0.1,
+                            end: 0,
+                            duration: 1800.ms,
+                            curve: Curves.easeOutBack,
+                          )
+                          .blur(
+                            begin: const Offset(10, 10),
+                            end: const Offset(0, 0),
+                            duration: 1500.ms,
+                          )
+                          .then(delay: 200.ms)
+                          .shimmer(
+                            duration: 2500.ms,
+                            // ignore: deprecated_member_use
+                            color: Colors.white.withOpacity(0.5),
+                            angle: 45,
+                          ),
                       const SizedBox(height: 10),
                       Text(
                         'Desenvolvedor Mobile',
@@ -48,11 +71,41 @@ class SectionIntro extends StatelessWidget {
                           fontSize: fontSizeSubtitle,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
+                          letterSpacing: 4,
                         ),
                       )
                           .animate()
-                          .fadeIn(duration: 1.seconds, delay: 0.5.seconds)
-                          .slide(begin: const Offset(0, 1)),
+                          .fadeIn(
+                              duration: 1200.ms,
+                              delay: 800.ms,
+                              curve: Curves.easeOutCubic)
+                          .slideY(
+                            begin: 1.5,
+                            end: 0,
+                            duration: 1500.ms,
+                            delay: 800.ms,
+                            curve: Curves.easeOutBack,
+                          )
+                          .blur(
+                            begin: const Offset(30, 30),
+                            end: const Offset(0, 0),
+                            duration: 1500.ms,
+                            delay: 800.ms,
+                          )
+                          .scale(
+                            begin: const Offset(0.8, 0.8),
+                            end: const Offset(1.0, 1.0),
+                            duration: 1500.ms,
+                            delay: 800.ms,
+                            curve: Curves.easeOutBack,
+                          )
+                          .then(delay: 300.ms)
+                          .shimmer(
+                            duration: 2800.ms,
+                            // ignore: deprecated_member_use
+                            color: Colors.blue.withOpacity(0.4),
+                            angle: -45,
+                          ),
                       SizedBox(height: spacing),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -64,8 +117,37 @@ class SectionIntro extends StatelessWidget {
                             hoverColor: Colors.blue,
                           )
                               .animate()
-                              .fadeIn(duration: 1.seconds)
-                              .slide(begin: const Offset(0, 1)),
+                              .fadeIn(
+                                  duration: 900.ms,
+                                  delay: 1400.ms,
+                                  curve: Curves.easeOut)
+                              .scale(
+                                begin: const Offset(0.0, 0.0),
+                                end: const Offset(1.15, 1.15),
+                                duration: 1200.ms,
+                                delay: 1400.ms,
+                                curve: Curves.elasticOut,
+                              )
+                              .rotate(
+                                begin: -2,
+                                end: 0,
+                                duration: 1200.ms,
+                                delay: 1400.ms,
+                                curve: Curves.easeOutBack,
+                              )
+                              .then()
+                              .scale(
+                                begin: const Offset(1.15, 1.15),
+                                end: const Offset(1.0, 1.0),
+                                duration: 400.ms,
+                                curve: Curves.easeInOut,
+                              )
+                              .shimmer(
+                                duration: 1800.ms,
+                                delay: 200.ms,
+                                // ignore: deprecated_member_use
+                                color: Colors.blue.withOpacity(0.5),
+                              ),
                           const SizedBox(width: 25),
                           SvgButton(
                             assetPath: 'assets/icons/github.svg',
@@ -74,8 +156,37 @@ class SectionIntro extends StatelessWidget {
                                 const Color.fromARGB(255, 190, 184, 184),
                           )
                               .animate()
-                              .fadeIn(duration: 1.seconds)
-                              .slide(begin: const Offset(0, 1)),
+                              .fadeIn(
+                                  duration: 900.ms,
+                                  delay: 1600.ms,
+                                  curve: Curves.easeOut)
+                              .scale(
+                                begin: const Offset(0.0, 0.0),
+                                end: const Offset(1.15, 1.15),
+                                duration: 1200.ms,
+                                delay: 1600.ms,
+                                curve: Curves.elasticOut,
+                              )
+                              .rotate(
+                                begin: 2,
+                                end: 0,
+                                duration: 1200.ms,
+                                delay: 1600.ms,
+                                curve: Curves.easeOutBack,
+                              )
+                              .then()
+                              .scale(
+                                begin: const Offset(1.15, 1.15),
+                                end: const Offset(1.0, 1.0),
+                                duration: 400.ms,
+                                curve: Curves.easeInOut,
+                              )
+                              .shimmer(
+                                duration: 1800.ms,
+                                delay: 200.ms,
+                                // ignore: deprecated_member_use
+                                color: Colors.white.withOpacity(0.5),
+                              ),
                           const SizedBox(width: 25),
                           SvgButton(
                             assetPath: 'assets/icons/whatsapp.svg',
@@ -84,8 +195,37 @@ class SectionIntro extends StatelessWidget {
                             hoverColor: Colors.greenAccent,
                           )
                               .animate()
-                              .fadeIn(duration: 1.seconds)
-                              .slide(begin: const Offset(0, 1)),
+                              .fadeIn(
+                                  duration: 900.ms,
+                                  delay: 1800.ms,
+                                  curve: Curves.easeOut)
+                              .scale(
+                                begin: const Offset(0.0, 0.0),
+                                end: const Offset(1.15, 1.15),
+                                duration: 1200.ms,
+                                delay: 1800.ms,
+                                curve: Curves.elasticOut,
+                              )
+                              .rotate(
+                                begin: -2,
+                                end: 0,
+                                duration: 1200.ms,
+                                delay: 1800.ms,
+                                curve: Curves.easeOutBack,
+                              )
+                              .then()
+                              .scale(
+                                begin: const Offset(1.15, 1.15),
+                                end: const Offset(1.0, 1.0),
+                                duration: 400.ms,
+                                curve: Curves.easeInOut,
+                              )
+                              .shimmer(
+                                duration: 1800.ms,
+                                delay: 200.ms,
+                                // ignore: deprecated_member_use
+                                color: Colors.green.withOpacity(0.5),
+                              ),
                           const SizedBox(width: 25),
                           SvgButton(
                             assetPath: 'assets/icons/email.svg',
@@ -93,8 +233,37 @@ class SectionIntro extends StatelessWidget {
                             hoverColor: Colors.red,
                           )
                               .animate()
-                              .fadeIn(duration: 1.seconds)
-                              .slide(begin: const Offset(0, 1)),
+                              .fadeIn(
+                                  duration: 900.ms,
+                                  delay: 2000.ms,
+                                  curve: Curves.easeOut)
+                              .scale(
+                                begin: const Offset(0.0, 0.0),
+                                end: const Offset(1.15, 1.15),
+                                duration: 1200.ms,
+                                delay: 2000.ms,
+                                curve: Curves.elasticOut,
+                              )
+                              .rotate(
+                                begin: 2,
+                                end: 0,
+                                duration: 1200.ms,
+                                delay: 2000.ms,
+                                curve: Curves.easeOutBack,
+                              )
+                              .then()
+                              .scale(
+                                begin: const Offset(1.15, 1.15),
+                                end: const Offset(1.0, 1.0),
+                                duration: 400.ms,
+                                curve: Curves.easeInOut,
+                              )
+                              .shimmer(
+                                duration: 1800.ms,
+                                delay: 200.ms,
+                                // ignore: deprecated_member_use
+                                color: Colors.red.withOpacity(0.5),
+                              ),
                         ],
                       ),
                     ],
