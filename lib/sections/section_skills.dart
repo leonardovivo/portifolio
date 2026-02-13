@@ -70,6 +70,61 @@ class SectionSkills extends StatelessWidget {
                             SizedBox(height: 30),
                             ZoomEducationItem(
                               icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'HTML',
+                              description:
+                                  'O básico da linguagem de marcação HTML para desenvolvimento web',
+                              height: 190,
+                              width: 280,
+                            ),
+                            SizedBox(height: 30),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'CSS',
+                              description:
+                                  'O básico da linguagem de estilo CSS para desenvolvimento web',
+                              height: 190,
+                              width: 280,
+                            ),
+                            SizedBox(height: 30),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'JavaScript',
+                              description:
+                                  'O básico da linguagem de programação JavaScript para desenvolvimento web, juntamente com React, Angular e Node',
+                              height: 220,
+                              width: 280,
+                            ),
+                            SizedBox(height: 30),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'Java',
+                              description:
+                                  'O básico da linguagem de programação Java para desenvolvimento backend',
+                              height: 190,
+                              width: 280,
+                            ),
+                            SizedBox(height: 30),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'MySQL',
+                              description:
+                                  'O básico do banco de dados relacional MySQL para gerenciamento de dados',
+                              height: 190,
+                              width: 280,
+                            ),
+                            SizedBox(height: 30),
+                            ZoomEducationItem(
+                              icon: Icon(
                                 Icons.build,
                               ),
                               skillName: 'BLoC',
@@ -146,6 +201,56 @@ class SectionSkills extends StatelessWidget {
                             height: 200,
                             width: 250,
                           ),
+                          ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'HTML',
+                              description:
+                                  'O básico da linguagem de marcação HTML para desenvolvimento web',
+                              height: 200,
+                              width: 250,
+                            ),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'CSS',
+                              description:
+                                  'O básico da linguagem de estilo CSS para desenvolvimento web',
+                              height: 200,
+                              width: 250,
+                            ),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'JavaScript',
+                              description:
+                                  'O básico da linguagem de programação JavaScript para desenvolvimento web, juntamente com React, Angular e Node',
+                              height: 220,
+                              width: 250,
+                            ),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'Java',
+                              description:
+                                  'O básico da linguagem de programação Java para desenvolvimento backend',
+                              height: 200,
+                              width: 250,
+                            ),
+                            ZoomEducationItem(
+                              icon: Icon(
+                                Icons.code,
+                              ),
+                              skillName: 'MySQL',
+                              description:
+                                  'O básico do banco de dados relacional MySQL para gerenciamento de dados',
+                              height: 200,
+                              width: 250,
+                            ),
                           ZoomEducationItem(
                             icon: Icon(
                               Icons.build,

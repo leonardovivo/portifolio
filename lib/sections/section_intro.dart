@@ -65,7 +65,7 @@ class SectionIntro extends StatelessWidget {
                           ),
                       const SizedBox(height: 10),
                       Text(
-                        'Desenvolvedor Mobile',
+                        'Desenvolvedor',
                         style: TextStyle(
                           fontFamily: 'Cormorant Garamond',
                           fontSize: fontSizeSubtitle,

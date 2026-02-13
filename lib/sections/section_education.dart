@@ -41,6 +41,7 @@ class SectionEducation extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: fontSizeTitle,
                                 fontWeight: FontWeight.bold,
+                                // ignore: deprecated_member_use
                                 color: Colors.white.withOpacity(0.1),
                               ),
                             ),
@@ -100,7 +101,7 @@ class SectionEducation extends StatelessWidget {
                                   'ADS',
                               institution:
                                   'FATEC Ipiranga - Pastor Enéas Tognini',
-                              period: '2023 - 2025',
+                              period: 'Cursando',
                               height: cardHeight,
                               width: cardWidth,
                             ),
@@ -145,7 +146,7 @@ class SectionEducation extends StatelessWidget {
                                       'Análise e Desenvolvimento de Sistemas',
                                   institution:
                                       'FATEC Ipiranga - Pastor Enéas Tognini',
-                                  period: '2023 - 2025',
+                                  period: 'Cursando',
                                   height: cardHeight,
                                   width: cardWidth,
                                 ),
@@ -200,7 +201,7 @@ class SectionEducation extends StatelessWidget {
                                         'Análise e Desenvolvimento de Sistemas',
                                     institution:
                                         'FATEC Ipiranga - Pastor Enéas Tognini',
-                                    period: '2023 - 2025',
+                                    period: 'Cursando',
                                     height: cardHeight,
                                     width: cardWidth,
                                   ),
